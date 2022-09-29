@@ -50,7 +50,6 @@ I added some additional complexity: all this was to be done without using any fr
 
 - Semantic HTML5 markup
 - Flexbox
-- CSS Grid
 - Vanilla JavaScript
 
 <!-- ### What I learned
