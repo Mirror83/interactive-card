@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Frontend Mentor | Interactive card details form</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  
+  <body>
+    <div class="view-area">
+      <img class="desktop-bg" src="./images/bg-main-desktop.png" />
+      <div class="card-front_container">
+        <div class="card-front_filled-circle"></div>
+        <div class="card-front_empty-circle"></div>
+        <img class="card-front" src="./images/bg-card-front.png">
+        <div class="card-front_numbers"></div>
+        <div class="card-front_name"></div>
+        <div class="card-front_date"></div>
+      </div>
+      <div class="card-back_container">
+        <img class="card-back" src="./images/bg-card-back.png">
+        <div class="card-back_numbers"></div>
+      </div>
+      <div class="form-area">
+        <form>
+          <div>
+            <label for="cardHolderName">Cardholder Name</label>
+          <input
+            required
+            type="text"
+            name="cardHolderName"
+            id="cardholder-name"
+            placeholder="e.g., Jane Appleseed"
+          />
+          <div class="error-msg"></div>
+          </div>
+          
+          <div>
+            <label for="cardNumber">Card Number</label>
+          <input
+           required
+            type="text"
+            name="cardNumber"
+            id="card-number"
+            placeholder="e.g. 1234 5678 9123 0000"
+            pattern="[0-9]{4} [0-9]{4} [0-9]{4} [0-9]{4}"
+          />
+          <div class="error-msg"></div>
+          </div>
+  
+          <div>
+            <label for="cardExpiryDate">Exp. Date (MM/ YY)</label>
+          <input type="date" name="cardExpiryDate" id="card-expiry-date" required/>
+          <div class="error-msg"></div>
+          </div>
+  
+          <div>
+            <label for="cardCvc">CVC</label>
+          <input type="text" name="cardCvc" id="card-cvc" pattern="[0-9]{3}" required/>
+          <div class="error-msg"></div>
+          </div>
+          <button class="submit">Confirm</button>
+        </form>
+        
+      </div>
+        <!-- Completed state start -->
+        <div class="completed">
+          <svg
+          class="icon-complete"
+          width="80"
+          height="80"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <circle cx="40" cy="40" r="40" fill="url(#a)" />
+          <path d="M28 39.92 36.08 48l16-16" stroke="#fff" stroke-width="3" />
+          <defs>
+            <linearGradient
+              id="a"
+              x1="-23.014"
+              y1="11.507"
+              x2="0"
+              y2="91.507"
+              gradientUnits="userSpaceOnUse"
+            >
+              <stop stop-color="#6348FE" />
+              <stop offset="1" stop-color="#610595" />
+            </linearGradient>
+          </defs>
+        </svg>
+  
+        <div class="thanks-text">Thank you!</div>
+        <div class="confirmation-text">We've added your card details</div>
+        <button class="continue">Continue</button>
+      </div>
+    </div>
+      
+    <!-- <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Mirror83</a>. -->
+    </div>
+  </body>
+  <script src="app.js"></script>
+</html>
