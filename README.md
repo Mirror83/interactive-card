@@ -18,8 +18,6 @@ This is a solution to the [Interactive card details form challenge on Frontend M
 
 **Note: Delete this note and update the table of contents based on what sections you keep.** -->
 
-## Overview
-
 ### The challenge
 
 Users should be able to:
@@ -30,6 +28,8 @@ Users should be able to:
   - The card number, expiry date, or CVC fields are in the wrong format
 - View the optimal layout depending on their device's screen size
 - See hover, active, and focus states for interactive elements on the page
+
+I added some additional complexity: all this was to be done without using any frontend framework
 
 ### Screenshot
 
